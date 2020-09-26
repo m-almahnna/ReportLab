@@ -3,7 +3,7 @@ import lombok.Data;
 import java.util.*;
 
 @Data
-public class ArrayExample {
+public class ArrayExample<S> {
 
 
 
