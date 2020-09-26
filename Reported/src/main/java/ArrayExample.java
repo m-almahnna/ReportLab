@@ -34,7 +34,7 @@ public class ArrayExample<S> {
                 break;
 
             }else {
-                System.out.println("i love u");
+                System.out.println("i  u");
             }
 
             System.out.println(Rep);
