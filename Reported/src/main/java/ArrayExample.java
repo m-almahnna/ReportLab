@@ -34,7 +34,12 @@ public class ArrayExample<S> {
                 break;
 
             }else {
+                ArrayList<String> xpass = new ArrayList<>();
+                xpass.add(String.valueOf(Rep));
+                System.out.println("goood");
+
                 System.out.println("i  u");
+
             }
 
             System.out.println(Rep);
@@ -72,7 +77,7 @@ public class ArrayExample<S> {
         break;
 
         }else {
-        System.out.println("i love u");
+        System.out.println("i  u");
         }
 
         System.out.println(Rep);
