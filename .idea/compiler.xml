@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$PROJECT_DIR$/libs/lombok-1.18.6.jar" />
+          <entry name="$PROJECT_DIR$/libs/mapstruct-processor-1.3.1.Final.jar" />
+        </processorPath>
+        <module name="ReportLab.Rp.main" />
+        <module name="ReportLab.Reported.main" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel target="15" />
+  </component>
+</project>

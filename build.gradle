@@ -1,0 +1,30 @@
+
+subprojects {
+    apply plugin: 'java'
+
+    group 'org.example'
+    version '1.0-SNAPSHOT'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        annotationProcessor fileTree(dir: '../libs', include: 'lombok-1.18.6.jar')
+        annotationProcessor fileTree(dir: '../libs', include: 'mapstruct-processor-1.3.1.Final.jar')
+
+
+        compileOnly fileTree(dir: '../libs', include: 'lombok-1.18.6.jar')
+        testCompile fileTree(dir: '../libs', include: 'lombok-1.18.6.jar')
+        compileOnly fileTree(dir: '../libs', include: 'mapstruct-1.3.1.Final.jar')
+        testCompileOnly fileTree(dir: '../libs', include: 'mapstruct-1.3.1.Final.jar')
+        compileOnly fileTree(dir: '../libs', include: 'javaee-api-7.0.jar')
+
+        compileOnly fileTree(dir: '../libs/logging', include: '*.jar')
+        testCompile fileTree(dir: '../libs/logging', include: 'slf4j-*.jar')
+        testCompile fileTree(dir: '../libs/logging', include: 'log4j-api-*.jar')
+
+        compileOnly fileTree(dir: '../libs/jasper-6.3.0', include: '*.jar')
+
+    }
+}
